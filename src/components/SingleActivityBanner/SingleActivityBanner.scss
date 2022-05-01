@@ -1,0 +1,46 @@
+.SingleActivityBanner {
+  display: block;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  width: 100%;
+  min-height: 30vh;
+  .text {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0 auto;
+    width: 90%;
+    p {
+      color: white;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
+      font-size: 18px;
+    }
+    h1 {
+      color: white;
+      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      font-size: 28px;
+    }
+    .desc {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .SingleActivityBanner {
+    background-repeat: no-repeat;
+    .text {
+      padding-top: 10%;
+      padding-bottom: 10%;
+      .desc {
+        width: 100%;
+      }
+      p {
+        font-size: 10px;
+      }
+      h1 {
+        font-size: 18px;
+      }
+    }
+  }
+}
+//add media query to make text expand to full width on phones, and set no repeat on background image

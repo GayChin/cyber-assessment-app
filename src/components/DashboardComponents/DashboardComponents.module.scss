@@ -1,0 +1,111 @@
+$magnolia: #e7e7f3;
+$primary-color: #524ca6;
+$secondary-color: #846cfe;
+$jet-black: #3b3b3f;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.progress-card {
+  color: $jet-black;
+  background-color: rgba(231, 231, 243, 0.5);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 200px;
+  height: 80px;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+
+  .progress-title {
+    margin: 0 auto;
+  }
+
+  .progress-number {
+    color: $primary-color;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    transition: all 0.2s linear;
+    background-color: rgba(231, 231, 243, 1);
+  }
+}
+
+.improvement-card {
+  color: white;
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  justify-content: space-evenly;
+  text-align: left;
+  width: 350px;
+  height: 140px;
+  border-radius: 13px;
+  overflow: hidden;
+  .improvement-title {
+    font-weight: bold;
+    height: 15%;
+    padding-bottom: 3px 0px 3px 0px;
+  }
+  .improvement-text {
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    // box-sizing: content-box;
+    padding-right: 15px;
+    height: 50%;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .improvement-text::-webkit-scrollbar {
+    display: none;
+  }
+  .gradient-btn {
+    width: 100px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.3s linear;
+    background-size: 200px 1px;
+    background-image: linear-gradient(to right, #e382f9, #8447ff, #02cff7);
+
+    &:hover {
+      transition: all 0.3s linear;
+      transform: scale(1.05);
+      background-position: -100px;
+    }
+  }
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  .missing-icon {
+    width: 120px;
+    height: auto;
+    color: $primary-color;
+  }
+
+  .errorMsg {
+    margin-top: 30px;
+    font-size: 35px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: $primary-color;
+    font-weight: bold;
+  }
+}

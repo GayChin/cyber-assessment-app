@@ -1,0 +1,33 @@
+$magnolia: #e7e7f3;
+$primary-color: #524ca6;
+$secondary-color: #846cfe;
+$jet-black: #3b3b3f;
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+
+  .missing-icon {
+    width: 100px;
+    height: auto;
+    color: $primary-color;
+  }
+
+  .oops {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    color: $primary-color;
+    font-weight: bold;
+  }
+
+  .errorMsg {
+    font-size: 20px;
+    color: $primary-color;
+  }
+}

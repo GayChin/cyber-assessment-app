@@ -1,0 +1,58 @@
+$primary-color: #524ca6;
+$secondary-color: #846cfe;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.genericBanner {
+  background-color: $primary-color;
+}
+
+.searchFormGenericBanner {
+  padding: 30px 2.5% 0% 2.5%;
+}
+
+.form-style {
+  display: flex;
+  flex-direction: row;
+}
+
+.searchBarGenericBanner {
+  border-radius: 5px;
+  width: 300px;
+  height: auto;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+.genericBannerHeader {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  display: inline-flex;
+  color: white;
+  padding: 30px 10px 0 10px;
+}
+
+.genericBannerDescription {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: white;
+  font-size: 16px;
+  text-align: justify;
+  padding: 0 10px;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

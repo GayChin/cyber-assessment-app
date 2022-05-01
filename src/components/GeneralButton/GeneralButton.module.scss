@@ -1,0 +1,66 @@
+$plump-purple: #524ca6;
+$medium-state-blue: #846cfe;
+$white: #fff;
+
+.btn {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-plump-purple {
+  background: $plump-purple;
+  color: $white;
+}
+.btn-white {
+  background: $white;
+  color: $plump-purple;
+}
+.btn-medium-state-blue {
+  background: $medium-state-blue;
+  color: $white;
+}
+.btn-dropbox-blue {
+  background: #0061fe;
+  color: $white;
+}
+.btn-greyout {
+  background: #d8d8d8;
+  color: #888888;
+}
+.btn-less-slightly-rounded {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.btn-slightly-rounded {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.btn-rounded {
+  border-radius: 45px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -o-border-radius: 45px;
+}
+
+.btn-small {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.btn-medium {
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+.btn-extra-small {
+  padding: 8px 10px;
+  font-size: 12px;
+}

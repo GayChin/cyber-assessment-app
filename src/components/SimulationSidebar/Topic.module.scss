@@ -1,0 +1,39 @@
+$magnolia: #e7e7f3;
+$primary-color: #524ca6;
+$secondary-color: #846cfe;
+$jet-black: #3b3b3f;
+
+.topic {
+  padding-left: 35px;
+  margin: 10% 0 10% 0;
+  cursor: pointer;
+  position: relative;
+  font-size: 18px;
+  color: white;
+}
+
+.selected-topic {
+  margin: 10% 0 10% 0;
+  color: $jet-black;
+  background-color: white;
+  padding: 5px 0 5px 10px;
+  margin-left: 25px;
+  border-radius: 30px 0 0 30px;
+  position: relative;
+}
+
+.timer-style {
+  font-weight: 600;
+  position: absolute;
+  right: 20px;
+}
+
+.check-circle {
+  color: #38c32c;
+  background-color: white;
+  background: radial-gradient(#fff 20%, #38c32c);
+  border-radius: 50%;
+  font-size: 25px;
+  position: absolute;
+  right: 20px;
+}

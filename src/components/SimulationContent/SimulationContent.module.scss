@@ -1,0 +1,87 @@
+$minlaptop: 40px;
+$laptop: 680px;
+$pc: 2400px;
+$magnolia: #e7e7f3;
+$primary-color: #524ca6;
+$secondary-color: #846cfe;
+$jet-black: #3b3b3f;
+
+.simulation-content-container {
+  // display: flex;
+  flex-shrink: 0;
+  margin: 0px auto;
+  justify-self: center;
+  align-self: center;
+  width: 75%;
+  overflow: visible;
+  height: 600px;
+  border: solid 2px black;
+  overflow-y: hidden;
+}
+
+.start-window-container {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    border-radius: 20px;
+  }
+  .phishing-start-prompt {
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    width: 50%;
+    transform: translate(0, -50%);
+    border: 4px solid $secondary-color;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    .phishing-start-button {
+      padding-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.loader-div {
+  width: 100%;
+  height:100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .loader {
+    border: 16px solid $magnolia;
+    border-radius: 50%;
+    border-top: 16px solid $secondary-color;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 1.5s linear infinite; /* Safari */
+    animation: spin 1.5s ease-in-out infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}

@@ -1,0 +1,64 @@
+$magnolia: #e7e7f3;
+$primary-color: #524ca6;
+$secondary-color: #846cfe;
+$jet-black: #3b3b3f;
+$test: linear-gradient(to right, #9c20aa, #fb3570);
+
+.sidebar-container {
+  width: 250px;
+  min-height: 100vh;
+  // overflow: auto;
+  background-color: $primary-color;
+  padding-top: 30px;
+  font-size: 18rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+  // -webkit-text-size-adjust: none;
+}
+
+.simulation-btn-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px 20px 100px 20px;
+  :first-child {
+    margin-bottom: 15px;
+  }
+}
+
+.loader-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30%;
+  justify-content: center;
+
+  .loader {
+    border: 16px solid $magnolia;
+    border-radius: 50%;
+    border-top: 16px solid $secondary-color;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 1.5s linear infinite; /* Safari */
+    animation: spin 1.5s ease-in-out infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}
+// https: ; //itnext.io/how-to-make-a-fancy-inverted-border-radius-in-css-5db048a53f95
+// https://stackoverflow.com/questions/40885923/countdown-timer-in-react
+// https://dev.to/j471n/css-gradient-loading-animation-2695

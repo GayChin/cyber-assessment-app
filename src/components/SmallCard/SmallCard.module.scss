@@ -1,0 +1,60 @@
+$magnolia: #e7e7f3;
+$primary-color: #524ca6;
+$secondary-color: #846cfe;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.card-container {
+  margin: 20px;
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: 0px 0px 15px -5px;
+  border-radius: 20px;
+  transition: all 0.2s linear;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.2s linear;
+  }
+}
+
+.image-container {
+  position: relative;
+}
+.image-container img {
+  overflow: hidden;
+  height: 180px;
+  width: 300px;
+}
+
+.card-title {
+  display: flex;
+  width: 50%;
+  border-top-right-radius: 12px;
+  height: 30px;
+  background: $magnolia;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.description-container {
+  font-size: 14px;
+  padding: 10px 20px;
+  // text-align: justify;
+  background-color: #524ca6;
+  color: white;
+  height: 100px;
+  width: 100%;
+
+  // display: -webkit-box;
+  // -webkit-line-clamp: 4;
+  // overflow: hidden;
+  // -webkit-box-orient: vertical;
+  // text-overflow: ellipsis;
+}

@@ -1,0 +1,92 @@
+$primary-color: #524ca6;
+$secondary-color: #846cfe;
+
+.py-1.col {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.container-fluid {
+  span,
+  div,
+  a {
+    font-family: "Poppins";
+    color: $primary-color !important;
+  }
+  span,
+  a {
+    font-size: 12px;
+  }
+  div {
+    font-weight: 500 !important;
+  }
+}
+
+.iconMembesarkan {
+  width: auto;
+  height: auto;
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+  }
+  img {
+    transition: all 0.2s linear;
+  }
+}
+
+.fourSocialMediaIcon {
+  padding-right: 3%;
+  padding-left: 1.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.footerNewtoDR {
+  height: auto;
+  background-color: $primary-color;
+  font-family: "Poppins";
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0px;
+
+  h3 {
+    display: inline-flex;
+    color: white;
+  }
+
+  .tour-btn {
+    color: $primary-color;
+    margin-left: 2.5%;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px;
+    width: 180px;
+    border-radius: 1em;
+    transition: all 0.2s linear;
+  }
+  .tour-btn:hover {
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+  }
+}
+
+#footerCopyright {
+  margin-top: 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .footerNewtoDR {
+    h3 {
+      font-size: 16px;
+    }
+    .tour-btn {
+      margin-top: 5px;
+      width: 120px;
+      height: 25px;
+      font-size: 12px;
+    }
+  }
+}

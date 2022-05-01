@@ -1,0 +1,224 @@
+.Description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80vw;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding: 0px;
+  img {
+    max-width: 40vw;
+    border-radius: 10px;
+  }
+  .Text.DescLeft {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: #524ca6;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 640px;
+    margin-right: 30px;
+    .text-children {
+      width: 580px;
+      text-align: left;
+      h1 {
+        margin-bottom: 30px;
+      }
+      p {
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 30px;
+      }
+    }
+  }
+  .Text.DescRight {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: #524ca6;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 640px;
+    margin-left: 30px;
+    text-align: left;
+    .text-children {
+      width: 540px;
+      h1 {
+        margin-bottom: 30px;
+      }
+      li {
+        margin-top: 10px;
+        font-size: 15px;
+        margin-left: 15px;
+      }
+    }
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+.DescLeft {
+  flex-direction: row-reverse;
+}
+
+.DescRight {
+  flex-direction: row;
+}
+
+@media screen and (max-width: 1200px) {
+  .Description.DescRight {
+    width: 100%;
+  }
+  .Description.DescLeft {
+    width: 100%;
+  }
+  .Description {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+    justify-content: center;
+    img {
+      max-width: 70vw;
+      margin-bottom: 20px !important;
+    }
+    .Text.DescRight {
+      width: 100%;
+      margin: 0px;
+      justify-content: center;
+      .text-children {
+        width: 60%;
+        text-align: left;
+        h1 {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        li {
+          margin-top: 0px;
+          margin-left: 0px;
+        }
+      }
+    }
+    .Text.DescLeft {
+      width: 100%;
+      margin: 0px;
+      justify-content: center;
+      .text-children {
+        width: 60%;
+        text-align: left;
+        h1 {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        p {
+          margin-top: 0px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Description.DescRight {
+    width: 100%;
+  }
+  .Description.DescLeft {
+    width: 100%;
+  }
+  .Description {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+    justify-content: center;
+    img {
+      max-width: 55vw;
+      margin-bottom: 20px !important;
+    }
+    .Text {
+      width: 100%;
+      margin: 0px;
+      justify-content: center;
+      .text-children {
+        width: 60%;
+        text-align: left;
+        h1 {
+          font-size: 18px;
+          margin-bottom: 20%;
+        }
+        li {
+          margin-top: 0px;
+          margin-left: 0px;
+        }
+        p {
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Description.DescRight {
+    width: 100%;
+  }
+  .Description.DescLeft {
+    width: 100%;
+  }
+  .Description {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 0px !important;
+    margin-top: 20px !important;
+    justify-content: center;
+    img {
+      max-width: 70vw;
+      margin-bottom: 20px !important;
+    }
+    .Text.DescRight {
+      width: 100%;
+      margin: 0px;
+      justify-content: center;
+      .text-children {
+        width: 90%;
+        text-align: left;
+        ul {
+          padding-left: 14px;
+        }
+        h1 {
+          width: 100%;
+          font-size: 20px;
+          margin-bottom: 10px;
+          padding-left: 10px;
+        }
+        li {
+          font-size: 14px;
+          margin-top: 0px;
+          margin-left: 0px;
+        }
+      }
+    }
+    .Text.DescLeft {
+      width: 100%;
+      margin: 0px;
+      justify-content: center;
+      .text-children {
+        width: 90%;
+        text-align: left;
+        h1 {
+          margin-bottom: 10px;
+          padding-left: 10px;
+        }
+        p {
+          padding-left: 10px;
+          margin-top: 0px;
+          font-size: 15px;
+          margin-bottom: 35px;
+        }
+      }
+    }
+  }
+}

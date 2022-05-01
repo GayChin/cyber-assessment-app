@@ -1,0 +1,120 @@
+$magnolia: #e7e7f3;
+$primary-color: #524ca6;
+$secondary-color: #846cfe;
+$jet-black: #3b3b3f;
+
+.tutorial-window {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 10px;
+  left: 10px;
+  z-index: 2100 !important;
+  border-radius: 10px;
+  width: 450px;
+  height: 100px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+//position styling
+.center {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.more-left-down {
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.left {
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.right {
+  top: 40%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.phishing-tutorial-title {
+  box-shadow: 0 0 10px grey;
+  z-index: 2100 !important;
+  color: white;
+  height: 30px;
+  padding-left: 20px;
+  border-radius: 10px 10px 0 0;
+  background-color: $primary-color;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+}
+
+.tutorial-title {
+  box-shadow: 0 0 10px grey;
+  z-index: 2100 !important;
+  color: white;
+  height: 30px;
+  padding-left: 20px;
+  border-radius: 10px 10px 0 0;
+  background-color: $secondary-color;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+}
+
+.message-container {
+  box-shadow: 0 4px 10px grey;
+  z-index: 2100 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 0 0 10px 10px;
+  background-color: white;
+  word-wrap: break-word;
+  font-size: 14px;
+  color: $jet-black;
+}
+
+.tutorial-window-buttons-container {
+  display: flex;
+  z-index: 2100 !important;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0px 5px;
+  padding-top: 20px;
+}

@@ -1,0 +1,179 @@
+$magnolia: #e7e7f3;
+$primary-color: #524ca6;
+$secondary-color: #846cfe;
+$jet-black: #3b3b3f;
+
+.profileBanner {
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.profNameEmail {
+  display: flex;
+  flex-direction: row;
+  box-sizing: content-box;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  border: solid 2px #c4c4c4;
+  border-radius: 5px;
+  justify-content: space-around;
+
+  .profImgContainer {
+    position: relative;
+    
+    .profPicOverlay {
+      position: absolute;
+      opacity: 0;
+      border-radius: 50%;
+      background-color: black;
+      width: 200px;
+      height: 200px;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 40px auto;
+      
+      .profPicCamIcon {
+        position: absolute;
+        color: white;
+        width: 100px;
+        height: 100px;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: translate(0, -50%);
+      }
+      &:hover {
+        opacity: 0.3;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .profPic {
+    margin: 40px 40px;
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .nameAndEmail {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 200px);
+    // justify-content: center;
+    align-items: center;
+  }
+  .formStyle {
+    margin: 40px 0;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    gap: 5px;
+    .formLabel {
+      margin: 0px;
+    }
+    .formInput {
+      padding-left: 5px;
+    }
+    .submitBtn {
+      margin-top: 10px;
+    }
+  }
+}
+
+.changePassword {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  border: solid 2px #c4c4c4;
+  border-radius: 5px;
+  padding: 30px;
+  margin-bottom: 50px;
+  .formStyle {
+    width: 50%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    .formLabel {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+    .formInput {
+      padding-left: 5px;
+    }
+    .formErrorInput {
+      border: solid 2px red;
+    }
+
+    .submitBtn {
+      margin-top: 10px;
+    }
+  }
+}
+
+.display-password-error {
+  display: block;
+  color: red !important;
+}
+.display-password-error::before {
+  content: "*";
+}
+.hide-password-error {
+  display: none;
+}
+
+.display-password-success {
+  display: block;
+  color: rgba(10, 206, 69, 0.801) !important;
+}
+.hide-password-success {
+  display: none;
+}
+
+.lineColor {
+  display: block;
+  height: 2px;
+  border-radius: 1px;
+  margin: auto;
+  background-color: $primary-color;
+}
+
+@media only screen and (max-width: 648px) {
+  .profNameEmail {
+    flex-direction: column;
+    align-items: center;
+
+    .profPic {
+      margin-bottom: 0;
+    }
+    .nameAndEmail {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      justify-content: center;
+    }
+    .formStyle {
+      width: 80%;
+    }
+  }
+
+  .changePassword {
+    flex-direction: column;
+    align-items: center;
+    .formStyle {
+      width: 80%;
+    }
+    h3 {
+      width: 80%;
+    }
+  }
+}

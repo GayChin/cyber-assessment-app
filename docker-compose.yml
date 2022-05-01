@@ -1,0 +1,12 @@
+version: '3'
+services:
+  drsbx-frontend:
+    container_name: drsbx-frontend
+    build:
+      context: /home/gaychin/drsbx-frontend/
+      dockerfile: Dockerfile
+      args:
+        - REACT_APP_URL=${REACT_APP_URL}
+        - REACT_APP_NODE_ENV=${REACT_APP_NODE_ENV}
+    ports:
+      - '3000:3000'

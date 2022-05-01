@@ -1,0 +1,895 @@
+$magnolia: #e7e7f3;
+$primary-color: #524ca6;
+$secondary-color: #846cfe;
+$jet-black: #3b3b3f;
+
+.phishing-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+}
+
+.browser-background {
+  user-select: none;
+  cursor: default;
+  padding-left: 1%;
+  padding-top: 5px;
+  background-color: #dee1e6;
+  display: flex;
+  flex-direction: row;
+  height: 5%;
+  font-size: 13px;
+}
+
+.tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0 2px 5px;
+  width: 180px;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+  background-color: #dee1e6;
+  button {
+    float: right;
+    margin-right: 7px;
+    background-color: transparent;
+  }
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.selectedTab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0 2px 5px;
+  width: 180px;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+  background-color: white;
+  font-family: Arial;
+  button {
+    float: right;
+    margin-right: 7px;
+    background-color: transparent;
+  }
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.tabImg {
+  width: 17px;
+  height: 17px;
+  margin-right: 7px;
+  margin-bottom: 3px;
+}
+
+.url-bar {
+  height: 3.5%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  margin: 0.5% 50px;
+  border-radius: 30px;
+  padding: 2px 20px;
+  background-color: #f1f3f4;
+}
+
+.display-url-status {
+  display: inline;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  background-color: #292a2d;
+  box-shadow: 0px 3px 3px grey;
+  padding: 0 5px 0 5px;
+  min-width: 100px;
+  max-width: 300px;
+  font-size: 12px;
+  z-index: 9999;
+  border-radius: 3px;
+  overflow-wrap: break-word;
+  .statusContainer {
+    color: white;
+
+    .statusSummary {
+      font-size: 13px;
+    }
+    .secure {
+      color: #6bc995;
+      font-size: 15px;
+    }
+
+    .insecure {
+      color: #f28b6c;
+      font-size: 15px;
+    }
+  }
+}
+
+.hide-url-status {
+  display: none;
+}
+
+.lock-style {
+  color: white;
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #6e6e6e;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s linear;
+  &:hover {
+    background-color: #6e6e6e;
+    color: white;
+    transition: all 0.3s linear;
+  }
+}
+
+.lock-style-null {
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s linear;
+  &:hover {
+    background-color: #6e6e6e;
+    color: white;
+    transition: all 0.3s linear;
+  }
+}
+
+.outlook-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  height: 7.5%;
+  border-bottom: rgba(126, 126, 126, 0.5) solid;
+  // box-shadow: 0px 3px 5px grey;
+  span {
+    cursor: default;
+    user-select: none;
+  }
+}
+
+.below-header-container {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  height: 82%;
+  width: 100%;
+}
+.close-tab-btn {
+  // height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+  width: 17px;
+  height: 17px;
+
+  &:hover {
+    color: white;
+    border-radius: 50%;
+    background: rgb(201, 201, 201);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+}
+
+//Phishing Content
+.header-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.profile-img-container {
+  position: relative;
+}
+.profile-img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 35px;
+  height: 35px;
+  // box-shadow: 0px 3px 5px grey;
+}
+
+.online-status {
+  position: absolute;
+  right: -3px;
+  bottom: -3px;
+  height: 15px;
+  width: 15px;
+  background-color: #3ba55d;
+  border-radius: 50%;
+  border: solid 3px white;
+}
+
+.outlook-sidebar {
+  width: 200px;
+  height: 100%;
+  background-color: #f3f2f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  &:selection {
+    color: none;
+    background: none;
+  }
+  &:-moz-selection {
+    color: red;
+    background: none;
+  }
+}
+
+.outlook-sidebar-item {
+  padding: 5px;
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 10px;
+  font-weight: bold;
+  position: relative;
+  background: white;
+  &:hover {
+    color: #0072c6;
+    background: rgba(0, 90, 158, 0.1);
+  }
+}
+
+.selected-outlook-sidebar-item {
+  padding: 5px;
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 10px;
+  color: #0072c6;
+  background: rgba(0, 90, 158, 0.1);
+  font-weight: bold;
+  position: relative;
+  user-select: none;
+  cursor: default;
+}
+
+.simulationSideBarItemIcon {
+  width: 20px;
+  height: 20px;
+  margin: 10px 5px;
+}
+
+.outlook-sidebar-item-name {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.outlook-sidebar-item-count {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  position: absolute;
+  right: 15px;
+}
+
+.right-below-header-container {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 200px);
+}
+
+.action-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background: #f3f2f1;
+  button {
+    background: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #0072c6;
+    margin-left: 8px;
+    font-size: 12px;
+    svg {
+      margin: 4px;
+      height: auto;
+      width: 20px;
+    }
+  }
+}
+
+.below-menu-container {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+//inbox
+.inbox-menu {
+  background-color: #fff;
+  flex-basis: 250px;
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  height: 100%;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.inbox-items-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 248px;
+}
+
+.inbox-item-container {
+  user-select: none;
+  cursor: default;
+  font-size: 9px;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  width: 100%;
+  border-bottom: solid 1px grey;
+  .message {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+  }
+  .sender {
+    font-size: 13px;
+  }
+  .subject {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 10px;
+    font-size: 10px;
+    .read {
+      color: #605e5c;
+    }
+    .unread {
+      color: #0072c6;
+    }
+  }
+  &:hover {
+    background-color: rgba(0, 90, 158, 0.1);
+  }
+}
+
+.selected-inbox-item-container {
+  user-select: none;
+  cursor: default;
+  font-size: 9px;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  width: 100%;
+  border-bottom: solid 1px grey;
+  background-color: rgba(0, 90, 158, 0.1);
+
+  .message {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+  }
+  .sender {
+    font-size: 13px;
+  }
+  .subject {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 10px;
+    font-size: 10px;
+    .read {
+      color: #605e5c;
+    }
+    .unread {
+      color: #0072c6;
+    }
+  }
+  &:hover {
+    background-color: rgba(0, 90, 158, 0.1);
+  }
+}
+
+.unread-status {
+  width: 3%;
+  margin-right: auto;
+  background-color: #0072c6;
+}
+
+.read-status {
+  width: 3%;
+  margin-right: auto;
+}
+
+.inbox-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 94%;
+  text-overflow: ellipsis;
+}
+
+.inbox-dropdown-menu {
+  background-color: #e5e5e5;
+  display: flex;
+  border-top: solid 1px gray;
+  flex-direction: row;
+  user-select: none;
+  cursor: default;
+  position: sticky;
+  top: 0;
+}
+
+//inbox-content
+.inbox-content-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 20px 30px 0 30px;
+  font-family: "Arial";
+  font-size: 12px;
+  row-gap: 15px;
+  // overflow-x: none;
+  overflow-y: auto;
+  // word-wrap: break-word;
+  // &::-webkit-scrollbar {
+  //   width: 100px;
+  //   color: red;
+  // }
+}
+
+.pre-inbox-content-container {
+  // overflow-wrap: break-word;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.inbox-content-subject-container {
+  overflow: hidden;
+  flex-wrap: wrap;
+  min-width: 0px;
+  font-size: 20px;
+}
+
+.inbox-content-sender-container {
+  white-space: nowrap;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  .img-sender-receiver {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .sender-img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 45px;
+    height: 45px;
+  }
+  .sender-email-receiver-email {
+    display: flex;
+    flex-direction: column;
+  }
+  .sender-email {
+    word-wrap: break-word;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    font-size: 15px;
+    overflow-wrap: break-word;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+  }
+  .receiver-email {
+    font-size: 11x;
+    color: grey;
+    // overflow-wrap: break-word;
+  }
+  .sender-img-container {
+    position: relative;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.inbox-content-time-container {
+  justify-self: end;
+}
+
+.inbox-content-message-container {
+  // text-align: justify;
+  margin-top: 0.5rem;
+  font-size: 15px;
+  min-width: 0px;
+  .dropbox-icon {
+    width: 50px;
+    height: 50px;
+    color: #0061fe;
+    margin-bottom: 20px;
+  }
+}
+
+// Incoming email
+.incoming-mail-container {
+  background-color: white;
+  position: absolute;
+  z-index: 999;
+  right: 20px;
+  top: 10px;
+  height: 65px;
+  width: 300px;
+  user-select: none;
+  cursor: default;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 3px 5px grey;
+  font-size: 9px;
+  font-family: "Roboto";
+  .unread-status {
+    width: 2%;
+    margin-right: auto;
+    background-color: #0072c6;
+  }
+  .incoming-title {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .incoming-msg {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+  }
+  &:hover {
+    background-color: #d9eaf6;
+  }
+  button {
+    position: absolute;
+    color: black;
+    right: 10px;
+    top: 3px;
+    font-size: 20px;
+    background-color: transparent;
+  }
+  animation: animatetop 0.5s;
+  @keyframes animatetop {
+    from {
+      top: -20px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+}
+
+// Start Windows
+.start-window-container {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    border-radius: 20px;
+  }
+  .phishing-start-prompt {
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    width: 50%;
+    transform: translate(0, -50%);
+    border: 4px solid $secondary-color;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    .phishing-start-button {
+      padding-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+// Tutorial Oerlay
+.tutorial-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  transition: all 0.3s linear;
+}
+
+.highlight-content {
+  z-index: 2000;
+}
+
+// Tutorial 5 content
+.tut5-container {
+  display: flex;
+  flex-direction: column;
+
+  svg {
+    margin: 4px;
+    height: auto;
+    width: 20px;
+  }
+}
+
+// bookmark background
+.inbox-item-bookmarked {
+  background-color: rgba(255, 221, 0, 0.1);
+
+  &:hover {
+    background-color: rgba(255, 230, 0, 0.2);
+  }
+}
+
+//Tab2 content starts here
+.inner-href {
+  display: inline;
+  color: #005a9e;
+  text-decoration: underline;
+  cursor: pointer;
+  position: relative;
+}
+
+// DROPBOX
+.noline-inner-href {
+  display: inline;
+  color: #005a9e;
+  cursor: pointer;
+  position: relative;
+}
+
+.forward-title-container {
+  border-left: solid #ebeae9;
+  margin-left: 2%;
+}
+
+.forward-title-content-container {
+  padding-left: 4%;
+}
+
+.forward-message-container {
+  margin-left: 2%;
+  padding-left: 4%;
+  border-left: solid #ebeae9;
+}
+
+.continue-prompt {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  z-index: 2001;
+}
+
+// Dropbox
+.dropbox-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .dropbox-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    .dropbox-icon {
+      width: 50px;
+      height: 50px;
+      color: #0061fe;
+      margin-bottom: 20px;
+    }
+  }
+  .dropbox-btn {
+    background-color: #0061fe;
+    color: white;
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+    &:hover {
+      background-color: #2f7fff;
+    }
+  }
+  .dropbox-ads {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    .dropbox-ads-left {
+      display: flex;
+      flex-direction: column;
+      background-color: #eee9e2;
+      width: 50%;
+      font-size: 20px;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      padding: 0 25px;
+    }
+    .dropbox-ads-right {
+      width: 50%;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+      }
+    }
+  }
+
+  .dropbox-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 750px;
+
+    input {
+      width: 750px;
+      margin-top: 5px;
+      padding-left: 5px;
+    }
+    .dropbox-caption {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .dropbox-caption > div:first-child {
+      margin-bottom: 30px;
+    }
+
+    .dropbox-submit {
+      align-self: flex-end;
+      margin-top: 10px;
+    }
+    label {
+      padding-top: 10px;
+    }
+  }
+
+  // .dropbox-footer {
+    // width: 500px;
+    // align-self: flex-end;
+    // justify-content: flex-end;
+  // }
+}
+
+.validate-btn {
+  background-color: #28a745 !important ;
+  color: white;
+  width: 210px;
+  padding: 2px 0px;
+  border-radius: 7px;
+}
+
+.display-password-error {
+  display: block;
+  color: red !important;
+}
+.display-password-error::before {
+  content: "*";
+}
+.hide-password-error {
+  display: none;
+}
+
+.formInput {
+  padding-left: 5px;
+}
+.formErrorInput {
+  border: solid 2px red;
+}
+
+.loader-div {
+  width: 100%;
+  height:100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .loader {
+    border: 16px solid $magnolia;
+    border-radius: 50%;
+    border-top: 16px solid $secondary-color;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 1.5s linear infinite; /* Safari */
+    animation: spin 1.5s ease-in-out infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}

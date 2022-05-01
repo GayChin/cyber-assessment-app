@@ -1,0 +1,43 @@
+#left-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2102;
+}
+
+#top-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2102;
+}
+
+#right-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2102;
+}
+
+#bottom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;  
+  height: 100%;
+  // background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2102;
+}
+
+.highlight-content {
+  z-index: 2103;
+}

@@ -1,0 +1,99 @@
+$phone: 300px;
+$tablet: 680px;
+$pc: 4000px;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+p {
+  font-size: 0.8em;
+}
+
+.closeBtn {
+  padding: 0;
+  border: none;
+  background: none;
+  position: absolute;
+  margin-left: 87%;
+  margin-top: 6%;
+}
+
+.submitBtn {
+  background-color: #846CFE !important; //shouldn't use important here geh, but Gay Chin's important overwritten this one
+  margin-bottom: 8px;
+  width: 100%;
+  border-radius: 0.3em !important;
+  color: white;
+  font-family: "Poppins";
+  &:hover{
+    filter: brightness(1.1);
+  }
+}
+
+.forgotPasswordBtn {
+  background: transparent;
+  border: none;
+  color: rgb(42, 115, 204);
+  cursor: pointer;
+  display: inline;
+  font-size: inherit;
+  padding: 0px;
+  transition: color 250ms ease-out 0s;
+  &:hover {
+    text-decoration:underline;
+  }
+}
+
+.loginPrompt {
+  position: absolute;
+  top: 12%;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  border-radius: 1em;
+  font-family: "Poppins";
+  background: white;
+  color: black;
+
+  h4 {
+    color: #524CA6;
+    font-family: "Poppins";
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $phone) and (max-width: $tablet) {
+    width: auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+    p {
+      font-size: 0.7em;
+    }
+    form {
+      font-size: 0.7em;
+      ::-webkit-input-placeholder {
+        font-size: 0.7em;
+      }
+    }
+    .logosize {
+      max-width: 30%;
+      max-height: auto;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $pc) {
+    width: 450px;
+    height: 450px;
+    margin: auto;
+
+    .logosize {
+      max-width: 80%;
+      max-height: auto;
+    }
+  }
+
+  .tm {
+    max-width: 80%;
+    max-height: auto;
+  }
+}
